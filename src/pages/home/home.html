@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      List Cam
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="action-sheets-basic-page">
+  <button ion-button block (click)="openMenu()">
+    Clique para adicionar uma imagem
+  </button>
+  <ion-card *ngFor="let item of imageList">
+    <img src="{{item.image}}" />
+  </ion-card>
+</ion-content>
